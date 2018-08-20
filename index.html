@@ -7,7 +7,7 @@
 <body>
     <header class="main-header">
         <h1 class="visually-hidden">Магазин фото-товаров"Device"</h1>
-        <img src="img/logo.svg" alt="Логотип магазина Девайс">
+        <img src="img/logo.svg" width="200px" height="50px" alt="Логотип магазина Девайс">
         <nav class="main-navigation">
           <ul class="site-navigation">
             <li><a href="catalog.html">Каталог товаров +</a> </li>
@@ -17,7 +17,7 @@
           </ul>
         </nav>
           <ul class="user-navigation">
-            <li class="login-link">Войти</li>
+            <li class="login-link"><a class="login-link" href="login.html">Войти</a></li>
             <li class="comparison-link">Сравнение</li>
             <li><a href="cart.html">Корзина</a></li>
           </ul>
@@ -40,7 +40,7 @@
           <span class="slide-number">01</span>
           </div>
           <div class="slide2">
-            <img src="img/slide-2.png" alt="Фото фитнес-браслета">
+            <img src="img/slider-2.png" alt="Фото фитнес-браслета">
             <b>Худеем правильно</b>
             <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету</p>
             <a class="tracker-info" href="#"> Подробнее </a>
@@ -121,20 +121,20 @@
             <li>Автотрейдинг</li>
             <li>ЖелДорЭкспедиция</li>
           </ul>
-          <a class=""type="button" href="about-us.html">Подробнее о нас</a>
+          <a class="about-us"type="button" href="about-us.html">Подробнее о нас</a>
       </section>
 
       <section class="contacts">
         <h2>Контакты</h2>
         <p> Вы сможете забрать ваш товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
         <img src="img/map.png" alt="map">
-        <a class=""type="button" href="About-us.html">Напишите нам</a>
+        <a class=""type="button" href="about-us.html">Напишите нам</a>
       </section>
       </section>
       <footer class="main-footer">
         <div class="part1">
           <h2 class="visually-hidden">Адрес</h2>
-          <img src="img/logo.png" alt="Логотип магазина Девайс">
+          <img src="img/logo.svg" alt="Логотип магазина Девайс">
           <b>Г. Москва ул. Строителей, 15</b>
         </div>  
         <div class="part2">
@@ -151,7 +151,7 @@
         </div>
         <div class="part3">
           <ul class="user-navigation">
-            <li class="login-link">Войти</li>
+            <li class="login-link"><a class="login-link" href="login.html">Войти</a></li>
             <li class="comparison-link">Сравнение</li>
             <li><a href="cart.html">Корзина</a></li>
           </ul>
@@ -161,11 +161,37 @@
           </p>
         </div>
         </footer>
-        <section class="modal modal-map">
-          <img src="img/map-big.png" alt="popup map">
-          <h2 class="visually-hidden">Где мы находимся</h2> 
-          <span class="modal modal-close">X</span>
-        </section>
+        <section class="modal modal-login">
+          <h2>Личный кабинет</h2>
+          <p>Введите свой логин и пароль.</p>
+          <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+            <p>
+              <label class="visually-hidden" for="user-login">Логин</label>
+              <input class="login-icon-user" id="user-login" type="text" name="login" placeholder="Логин">
+            </p>
+            <p>
+              <label class="visually-hidden" for="user-password">Пароль</label>
+              <input class="login-icon-password" id="user-password" type="password" name="password" placeholder="Пароль">
+            </p>
+            <p class="login-password-info">
+            <label class="login-checkbox">
+              <input type="checkbox" name="remember" class="visually-hidden">
+              <span class="checkbox-indicator"></span>
+              Запомните меня
+            </label>
+            <a class="restore" href="#">Я забыл пароль!</a>
+            </p>
+            <button class="button" type="submit">Войти</button>
+          </form>
+          <button class="modal-close" type="button">Закрыть</button>
+          </section>
+          <section class="modal modal-map">
+            <p>
+              <img src="img/map-big.png" alt="Офис компании по адресу ул. Строителей, 15">
+            </p>
+            <h2 class="visually-hidden">Где мы находимся</h2> 
+            <button class="modal-close" type="button" >Закрыть</button>
+          </section>
       </main>
     </body>
 </html>
