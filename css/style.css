@@ -1,11 +1,30 @@
+@font-face {
+    font-family: 'gilroyextrabold';
+    src: url('gilroyextrabold-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'open_sanslight';
+    src: url('opensans-light-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'gilroylight';
+    src: url('gilroylight-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+
+}
 body {
     margin: 0;
     padding: 0;
 
-    font-family: 'Russo One', sans-serif;
+    font-family: 'gilroyextrbold', sans-serif;
     font-size: 18px;
     line-height: 24px;
-    font-weight: 700;
+    font-weight: 400;
     color: #000000;
     text-transform: uppercase;
 
@@ -20,6 +39,7 @@ a {
     background-color: #f7e296;
 }
 .main-navigation {
+    font-family: 'gilroyextrabold', sans-serif;
     font-size: 18px;
     line-height: 24px;
     color: #000000;
@@ -27,6 +47,7 @@ a {
     background-color: #f7e296;
   }
   .user-navigation{
+      font-family: 'open_sanslight', sans-serif;
       font-size: 15px;
       line-height: 30px;
       color: #000000;
@@ -140,6 +161,7 @@ a {
       line-height: 30px;
   }
   h2 {
+      font-family: 'gilroyextrabold', sans-serif; 
       font-size: 47px;
       line-height: 48px;
   }
