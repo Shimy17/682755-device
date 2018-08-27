@@ -1,0 +1,154 @@
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Russo One', sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #000000;
+    text-transform: uppercase;
+
+    background-color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+}
+.main-header{
+    color:#000000;
+    background-color: #f7e296;
+}
+.main-navigation {
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;
+  
+    background-color: #f7e296;
+  }
+  .user-navigation{
+      font-size: 15px;
+      line-height: 30px;
+      color: #000000;
+      
+      background-color: #f7e296;
+  }
+  .site-navigation,
+  .user-navigation {
+    list-style: none;
+  }
+  .site-navigation a,
+  .user-navigation a{
+      color: #000000;
+  }
+  .site-navigation a:focus,
+  .user-navigation a:focus,
+  .site-navigation a:hover,
+  .user-navigation a:hover{
+  color: rgba(0,0,0,0.6)
+}
+
+  .goods-list,
+  .features-list,
+  .brands,
+  .social-buttons{
+    list-style: none;
+}
+
+ .button {
+    font: inherit;
+  
+    text-align: center;
+    color: #000000;
+    vertical-align: middle;
+    text-transform: uppercase;
+
+    background-color:#ffffff;
+    border: none ;
+}
+  b {
+      text-decoration: none;
+      font-size: 47px;
+      line-height: 56px;
+  }
+ .button:focus,
+ .button:hover{
+     background-color: #f0c52e;
+ }
+ .button:active{
+    background-color: #f0c52e;
+    color:#000000;
+ }
+ .main-footer {
+     color: #ffffff;
+     background-color: #464646;
+ }
+
+ .social-button{
+     text-align: center;
+     color: rgba(255, 255, 255, 0.3);
+ }
+ .social-button:focus
+ .social-button:hover{
+    color: rgba(255, 255, 255,0.6); 
+ }
+ .appointment-item input {
+    font: inherit;
+  
+    background-color: #f2f2f2;
+    border: 2px solid #f2f2f2;}
+ .appointment-item input:focus {
+    background-color: #ffffff;
+    border: 2px solid #f7e296;
+  }
+  .appointment-item input:hover {
+    background-color: #eaeaea;
+    border: 2px solid #eaeaea;
+  }
+
+ .footer-copyright {
+    text-align: center;
+  }
+  .footer-copyright a:hover,
+  .footer-copyright a:focus{
+  color: rgba(255, 198, 0, 0.6);
+}
+  .footer-site-navigation a{
+    font-size: 18px;
+    line-height: 24px;
+    color: #ffffff;
+  }
+  .footer-site-navigation a:focus,
+  .footer-site-navigation a:hover{
+    font-size: 18px;
+    line-height: 24px;
+    color: rgba(255, 255, 255,0.6);   
+  }
+  .footer-user-navigation a{
+    font-size: 15px;
+    line-height: 30px;
+    color: rgba(255, 255, 255, 0.7);
+  }
+  .footer-user-navigation a:focus,
+  .footer-user-navigation a:hover{
+    font-size: 15px;
+    line-height: 30px;
+    color: rgba(255, 255, 255, 1);
+  }
+  .adress {
+      font-size: 15px;
+      line-height: 30px;
+  }
+  h2 {
+      font-size: 47px;
+      line-height: 48px;
+  }
+  p {
+      font-size: 15px;
+      line-height: 30px;
+  }
+  .partners{
+      font-size: 16px;
+      line-height: 40px;
+  }
+
