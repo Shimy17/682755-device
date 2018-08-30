@@ -1,22 +1,23 @@
 @font-face {
     font-family: 'gilroyextrabold';
-    src: url('gilroyextrabold-webfont.woff2') format('woff2');
+    src: url('../fonts/gilroyextrabold-webfont.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'open_sanslight';
-    src: url('opensans-light-webfont.woff2') format('woff2');
+    src: url('../fonts/opensans-light-webfont.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'gilroylight';
-    src: url('gilroylight-webfont.woff2') format('woff2');
+    src: url('../fonts/gilroylight-webfont.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 
 }
+
 body {
     margin: 0;
     padding: 0;
@@ -24,7 +25,7 @@ body {
     font-family: 'gilroyextrbold', sans-serif;
     font-size: 18px;
     line-height: 24px;
-    font-weight: 400;
+    font-weight: 700;
     color: #000000;
     text-transform: uppercase;
 
@@ -35,16 +36,34 @@ a {
     text-decoration: none;
 }
 .main-header{
+    display: flex;
     color:#000000;
     background-color: #f7e296;
+    min-height: 225px;
+    margin-bottom: 65px;
+}
+ .main-header-logo {
+    font-size: 48px;
+    line-height: 48px;
+    color: #000000;
+    font-weight: 725;
+  }
+.main-footer-logo{
+    font-size: 48px;
+    line-height: 48px;
+    color:#ffc600;
+    font-weight: 725;
 }
 .main-navigation {
     font-family: 'gilroyextrabold', sans-serif;
     font-size: 18px;
     line-height: 24px;
     color: #000000;
-  
     background-color: #f7e296;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .user-navigation{
       font-family: 'open_sanslight', sans-serif;
@@ -54,10 +73,61 @@ a {
       
       background-color: #f7e296;
   }
-  .site-navigation,
-  .user-navigation {
+  .site-navigation {
+    display: flex;
+    flex-direction: row;  
     list-style: none;
+    width:1050px;
+    margin:0;
+    padding:0;
   }
+  .user-navigation {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    width: 505px;
+    margin:0;
+    padding:0;
+  }
+  .main-navigation-wrapper {
+    width: 100%;
+    margin-bottom: 60px;
+  }
+  .slider {
+    margin-top: -101px;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    
+    min-height: 485px;
+  }                                                                                                                                                         
+  .slide1{
+    display: flex;
+    padding: 0;
+    list-style: none;
+    width:100px;
+    
+    min-height: 485px;
+  }
+  .slide2{
+    margin: 0;
+    list-style: none;
+    width:100px;
+    display: none;
+
+    min-height: 485px;
+  }
+  .slide3{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    
+    width:100px;
+    min-height: 485px;
+    display:none;
+  }
+
   .site-navigation a,
   .user-navigation a{
       color: #000000;
@@ -172,5 +242,8 @@ a {
   .partners{
       font-size: 16px;
       line-height: 40px;
+  }
+  .visually-hidden{
+      display: none;
   }
 
