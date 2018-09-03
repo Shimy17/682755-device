@@ -37,6 +37,7 @@ a {
 }
 .main-header{
     display: flex;
+    flex-direction: column;
     color:#000000;
     background-color: #f7e296;
     min-height: 225px;
@@ -66,6 +67,7 @@ a {
     align-items: center;
   }
   .user-navigation{
+      justify-content: space-between;
       font-family: 'open_sanslight', sans-serif;
       font-size: 15px;
       line-height: 30px;
@@ -75,7 +77,8 @@ a {
   }
   .site-navigation {
     display: flex;
-    flex-direction: row;  
+    flex-direction: row;
+    justify-content: space-between; 
     list-style: none;
     width:1050px;
     margin:0;
@@ -127,7 +130,12 @@ a {
     min-height: 485px;
     display:none;
   }
-
+ .warranty{
+     display: none;
+ }
+ .credit{
+     display: none;
+ }
   .site-navigation a,
   .user-navigation a{
       color: #000000;
@@ -138,12 +146,54 @@ a {
   .user-navigation a:hover{
   color: rgba(0,0,0,0.6)
 }
+.main-footer{
+    display: flex;
+}
+  .footer-part1{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-self: flex-start;
+  }
+  .footer-part2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-self: center;
+}
+.footer-part3{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-self: flex-end;
+}
 
-  .goods-list,
-  .features-list,
-  .brands,
+  .goods-list{
+      list-style: none;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+  }
+  .goods-item{
+    text-align: center;
+  }
+  .features-list{
+      list-style: none;
+    }
+  .features {
+      display: flex;
+      justify-content: space-between;
+  }
+  .brands{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+    }
   .social-buttons{
     list-style: none;
+    display: flex;
+    flex-direction: row;
 }
 
  .button {
@@ -196,10 +246,20 @@ a {
     background-color: #eaeaea;
     border: 2px solid #eaeaea;
   }
+ 
+ .footer-site-navigation{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+    }
+ .footer-user-navigation{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+ }
 
- .footer-copyright {
-    text-align: center;
-  }
   .footer-copyright a:hover,
   .footer-copyright a:focus{
   color: rgba(255, 198, 0, 0.6);
