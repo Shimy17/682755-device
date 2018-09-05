@@ -22,12 +22,13 @@ body {
     margin: 0;
     padding: 0;
 
-    font-family: 'gilroyextrbold', sans-serif;
+    font-family: 'gilroyextrabold', sans-serif;
     font-size: 18px;
     line-height: 24px;
     font-weight: 700;
     color: #000000;
     text-transform: uppercase;
+    max-width: 1200px;
 
     background-color: #ffffff;
 }
@@ -36,6 +37,7 @@ a {
     text-decoration: none;
 }
 .main-header{
+    max-width: inherit;
     display: flex;
     flex-direction: column;
     color:#000000;
@@ -179,16 +181,26 @@ a {
   }
   .features-list{
       list-style: none;
+      flex-direction: column;
     }
   .features {
       display: flex;
+      flex-direction: row;
       justify-content: space-between;
+  }
+  .features .delivery {
+      display: flex;
+      flex-direction: row;
   }
   .brands{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     list-style: none;
+    }
+    .dji:hover,
+    .dji:focus{
+        background-image: url(img/dji-color.png)
     }
   .social-buttons{
     list-style: none;
@@ -245,6 +257,11 @@ a {
   .appointment-item input:hover {
     background-color: #eaeaea;
     border: 2px solid #eaeaea;
+  }
+  .we{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
   }
  
  .footer-site-navigation{
@@ -305,5 +322,45 @@ a {
   }
   .visually-hidden{
       display: none;
+  }
+  .filters {
+      width: 250px;
+  }
+  .catalog-columns{
+      display: flex;
+      justify-content: space-between;
+  }
+  .product {
+      width: 360px;
+      margin-bottom: 75px;
+  }
+  .product img {
+      background-color: #eeeeee;
+  }
+  .device-products{
+      margin:0;
+      margin-bottom: 40px;
+      padding:0;
+
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+  }
+  .page-title{
+      margin: 0;
+      margin-bottom: 40px;
+      padding: 0;
+  }
+  .way{
+      padding:0;
+      margin: 0;
+      margin-bottom:55px;
+  }
+  .page-selection {
+      margin: 0;
+      padding: 0;
+
+      list-style: none;
   }
 
